@@ -1,6 +1,9 @@
 @import './global/vars';
+@import './global/mixins';
 @import './global/fonts';
 @import './global/reset';
 @import './global/global';
-@import './global/mixins';
 
+//blocks
+@import './blocks/header';
+@import './blocks/divider';

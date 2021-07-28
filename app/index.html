@@ -4,11 +4,47 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>HTML-Table</title>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-  
+  <div class="container">
+    <div class="wrapper">
+      <div class="header">
+        <div class="header__item">
+          <input class="header__search" placeholder="Поиск по запросу"/>
+          <div class="header__toggler">
+            <button class="header__toggler-btn header__toggler-btn--left header__toggler-btn--active">iPhone/iPod</button>
+            <button class="header__toggler-btn header__toggler-btn--right">iPad</button>
+          </div>
+        </div>
+        <div class="header__item">
+          <button class="header__dwnload-btn">Скачать .CSV</button>
+          <button class="header__add-btn">Добавить запрос</button>
+        </div>
+      </div>
+
+      <div class="divider">
+        <div class="divider__content">
+          <div class="divider__spans">
+            <div class="divider__spans-yellow">45% в</div>
+            <div class="divider__spans-white">ТОП - 3</div>
+          </div>
+          <div class="divider__descr">
+            <div class="divider__descr-icon">
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g opacity="0.5">
+                <path d="M13.5 7C13.5 10.5899 10.5899 13.5 7 13.5C3.41015 13.5 0.5 10.5899 0.5 7C0.5 3.41015 3.41015 0.5 7 0.5C10.5899 0.5 13.5 3.41015 13.5 7Z" stroke="#11223E"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.5 3H6.5V8H7.5V3ZM7.5 10H6.5V11H7.5V10Z" fill="#11223E"/>
+                </g>
+                </svg>
+            </div>
+            <div class="divider__descr-text">Вы недополучаете 450 инсталлов в день</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <script src="js/script.js"></script>
 </body>
 </html>

@@ -1,0 +1,50 @@
+.divider {
+  width: 100%;
+  height: 2.5rem;
+  @include flex-center;
+  background: rgba(#F8E71C, 0.15);
+  border-radius: 5px;
+
+  &__content {
+    @include flex-start;
+    gap: 1.25rem;
+  }
+
+  &__spans {
+    display: flex;
+    color: #11223E;
+    font-size: 0.75rem;
+  }
+
+  &__spans-yellow {
+    padding-top: 0.25rem;
+    width: 2.4375rem;
+    height: 1.125rem;
+    @include flex-end;
+    background: #F8E71C;
+    border-radius: 5px 0px 0px 5px;
+  }
+
+  &__spans-white {
+    padding-top: 0.25rem;
+    width: 2.625rem;
+    height: 1.125rem;
+    @include flex-start;
+    border-radius: 0 5px 5px 0;
+    background: #FFFFFF;
+  }
+
+  &__descr {
+    @include flex-start;
+    gap: 0.625rem;
+  }
+
+  &__descr-icon {
+    @include flex-center;
+  }
+
+  &__descr-text {
+    font-size: 0.875rem;
+    color: rgba(#11223E, 0.5);
+  }
+}

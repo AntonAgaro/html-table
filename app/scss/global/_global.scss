@@ -1,12 +1,22 @@
 html,
 body {
 	height: 100%;
+	font-family: HarmoniaSansProCyr-Cond;
+}
+
+html {
+	font-size: 100%;
 }
 
 .wrapper {
-	display: flex;
-	flex-direction: column;
-	min-height: 100%;
+	margin: 0 auto;
+	padding: 40px;
+	width: 1080px;
+	@include flex-column-start;
+	gap: 1.875rem;
+	background: #FFFFFF;
+	border: 1px solid rgba(17, 34, 62, 0.05);
+	border-radius: 5px;
 }
 
 .main {
@@ -19,7 +29,7 @@ body {
 .container{
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 83px 0;
 }
 
 
