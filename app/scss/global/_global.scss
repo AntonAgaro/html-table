@@ -6,12 +6,27 @@ body {
 
 html {
 	font-size: 100%;
+	@media (max-width: 71.875rem) {
+		font-size: 14px;
+	}
+	@media (max-width: 60rem) {
+		font-size: 12px;
+	}
+	@media (max-width: 53.75rem) {
+		font-size: 10px;
+	}
+	@media (max-width: 45.25rem) {
+		font-size: 8px;
+	}
+	@media (max-width: 37.8125rem) {
+		font-size: 6px;
+	}
 }
 
 .wrapper {
 	margin: 0 auto;
 	padding: 40px;
-	width: 1080px;
+	max-width: 1080px;
 	@include flex-column-start;
 	gap: 1.875rem;
 	background: #FFFFFF;
