@@ -48,7 +48,7 @@
     color: #355B08;
   }
 
-  &__decrease {
+  &__modifire {
     position: absolute;
     top: 0.3125rem;
     right: 0.125rem;
@@ -57,8 +57,14 @@
     @include flex-center;
     gap: 1px;
     font-size: 0.625rem;
-    color: #D0021B;
+    &--decrease {
+      color: #D0021B;
+    }
+    &--increase {
+      color: #417505;
+    }
   }
+
 
   &__firstwide {
     width: 17.75rem;
