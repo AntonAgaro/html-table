@@ -1,0 +1,181 @@
+.table {
+  border-spacing: 0;
+  border-collapse: collapse;
+  border: 1px solid rgba(#11223E, 0.07);
+  border-left: 1px solid rgba(#11223E, 0.2);
+  
+  td, th {
+    position: relative;
+    width: 2.875rem;
+    height: 3.25rem;
+    border: 1px solid rgba(#11223E, 0.07);
+  }
+
+  th {
+    font-size: 0.75rem;
+    color: rgba(#11223E, 0.3);
+    &:first-child, &:nth-child(2) {
+      border: 1px solid rgba(#11223E, 0.2);
+    }
+  }
+
+  td {
+    &:first-child, &:nth-child(2) {
+      border: 1px solid rgba(#11223E, 0.2);
+    }
+  }
+
+  &__td-wrapper {
+    width: 100%;
+    height: 100%;
+    @include flex-center;
+    color: #11223E;
+    font-size: 0.875rem;
+  }
+
+  &__green-block {
+    position: absolute;
+    padding-top: 0.125rem;
+    width: 1.375rem;
+    height: 0.6875rem;
+    bottom: 0.25rem;
+    left: 50%;
+    transform: translateX(-50%);
+    @include flex-center;
+    border-radius: 3px;
+    background: rgba(#75B926, 0.3);
+    font-size: 0.625rem;
+    color: #355B08;
+  }
+
+  &__decrease {
+    position: absolute;
+    top: 0.3125rem;
+    right: 0.125rem;
+    width: 0.8125rem;
+    height: 0.4375rem;
+    @include flex-center;
+    gap: 1px;
+    font-size: 0.625rem;
+    color: #D0021B;
+  }
+
+  &__firstwide {
+    width: 17.75rem;
+    height: 100%;
+    padding-left: 0.875rem;
+    padding-right: 1.25rem;
+    @include flex-space-between;
+  }
+
+  &__firstwide-flexpart {
+    @include flex-start;
+    gap: 1.25rem;
+  }
+
+  &__checkbox {
+    width: 1.25rem;
+    height: 1.25rem;
+    @include flex-center;
+    background: rgba(#223E69, 0.1);
+    border-radius: 5px;
+    cursor: pointer;
+    img {
+      width: 0.625rem;
+      height: 0.625rem;
+      display: none;
+    }
+    &--checked {
+      img {
+        display: block;
+      }
+    }
+  }
+
+  &__header-icons {
+    @include flex-start;
+    gap: 0.625rem;
+    img {
+      cursor: pointer;
+      }
+  }
+
+  &__secondwide {
+    width: 5.625rem;
+    height: 100%;
+    @include flex-center;
+    gap: 0.375rem;
+  }
+
+  &__secondwide-text {
+    width: 2.8125rem;
+    height: 1.875rem;
+  }
+
+  &__text {
+    font-size: 0.875rem;
+    color: #11223E;
+  }
+
+  &__icons {
+    margin-left: 0.875rem;
+    @include flex-start;
+    gap: 0.5rem;
+  }
+
+  &__toggler-star {
+    cursor: pointer;
+    margin-bottom: 0.125rem;
+    &:hover {
+      path {
+        stroke:  #F5A623;
+      }
+    }
+    &--active {
+      fill:  #F5A623;
+      path {
+        stroke:  #F5A623;
+      }
+    }
+  }
+
+  &__toggler-arrow {
+    cursor: pointer;
+    &--active {
+      transform: rotate(90deg);
+    }
+  }
+
+  // Вложенные строки
+  &__nested-row {
+    display: none;
+    td, td:first-child, td:nth-child(2) {
+      border: none;
+    }
+    &--show {
+      display: table-row;
+    }
+  }
+
+  &__nested-wrapper {
+    width: 100%;
+    height: 100%;
+    padding-top: 1.25rem;
+    padding-left: 3.4375rem;
+    @include flex-column-start;
+  }
+  
+  &__nested-button {
+    width: 10.875rem;
+    height: 2rem;
+    padding: 0.6875rem 1.25rem;
+    @include flex-center;
+    font-size: 0.875rem;
+    color: #11223E;
+    border: 1px solid rgba(#223E69, 0.2);
+    border-radius: 5px;
+    cursor: pointer;
+    background: #FFFFFF;
+  }
+
+}
